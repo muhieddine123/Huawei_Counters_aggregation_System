@@ -1,0 +1,2 @@
+skipping rows,SQL_Server_Name,Database,user,password,time_column,NE_column,Non Numeric Columns,granularity column,Bulk insert CSV Directory,bulk Insert Errors
+1,DESKTOP-8GR679R,New HSTS,sa,123456-c,Result Time,Object Name,Reliability,Granularity Period,C:\Users\muhieddine\PycharmProjects\HSTS Project\Result,C:\Users\muhieddine\PycharmProjects\HSTS Project\bulkInsertErrors

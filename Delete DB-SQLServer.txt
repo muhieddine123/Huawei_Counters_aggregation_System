@@ -1,0 +1,4 @@
+EXEC msdb.dbo.sp_delete_database_backuphistory @database_name = N'Temporary_2452'
+USE [master]
+DROP DATABASE [Temporary_2452]
+
