@@ -73,13 +73,13 @@ def launch_the_process(list_of_parallel_func_arguments):
 def initial_launch():
     ts = time.time()
     st = datetime.fromtimestamp(ts).strftime('%Y%m%d%H%M%S')
-    raw_files_dir = "C:\\Hourly_PM_Files"
+    raw_files_dir = "D:\\Hourly_PM_Files"
     sql_user = "postgres"
     sql_password = "123456-c"
     sql_host_name = "localhost"
     bookkeeper_schema_name = "bookkeeper"
 
-    # pivoted_counter_mapping_df = pivot_counter_mapping_table()
+    #pivoted_counter_mapping_df = pivot_counter_mapping_table()
     pivoted_counter_mapping_df = pd.read_csv(os.getcwd() + "\\" + 'pivoted_counter_mapping.csv', encoding='latin-1',
                                              engine='python', dtype='object', error_bad_lines=False)
     pivoted_counter_mapping_df['FunctionSubSet_id'] = pd.to_numeric(
@@ -585,10 +585,10 @@ if __name__ == '__main__':
 #
 # def ins_data_to_tempo_db(input_df, tempo_db_name, csv_dir, sql_host_name, sql_user, sql_password):
 #
-#     sql_str_master_conn= sql_str_crt_conn(sql_host_name,None,sql_user,sql_password)
+#     sql_str_Hourly_conn= sql_str_crt_conn(sql_host_name,None,sql_user,sql_password)
 #
-#     if not chk_sql_db_exist(sql_str_master_conn,tempo_db_name):
-#         if not create_sql_db(sql_str_master_conn,tempo_db_name):
+#     if not chk_sql_db_exist(sql_str_Hourly_conn,tempo_db_name):
+#         if not create_sql_db(sql_str_Hourly_conn,tempo_db_name):
 #             print("New Temporary DB not created")
 #             return
 #

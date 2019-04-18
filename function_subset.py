@@ -4,6 +4,7 @@ import os
 import pandas as pd
 import glob
 from sql_functions_postgresql import *
+import ntpath
 class function_subset:
 
     def __init__(self,entity_type=None,object_type=None,func_subset_id=None,header_of_pm_file=None):
@@ -89,12 +90,17 @@ class function_subset:
             #raw_df_list = raw_df_list.append(pd.read_csv(checked_list_of_pm_files[0], encoding='latin1', skiprows=[self.rows_to_skip],dtype='object', parse_dates = [ self.timestamp_column], date_parser = dateparse))
             for pm_file in checked_list_of_pm_files:
                 try:
-                    raw_df_list.append(pd.read_csv(pm_file, encoding='latin1', skiprows=[self.rows_to_skip], dtype='object', parse_dates=[self.timestamp_column], date_parser=dateparse))
+                    raw_df=pd.read_csv(pm_file, encoding='latin1', skiprows=[self.rows_to_skip], dtype='object', parse_dates=[self.timestamp_column], date_parser=dateparse)
+                    raw_df['Result Time'] = datetime.strptime(ntpath.basename(pm_file).split("_")[3],
+                                                        "%Y%m%d%H%M%S")
+                    raw_df_list.append(raw_df)
                 except Exception as e:
                     print("problem in reading the package file:"+pm_file)
                     print(str(e.args))
             if len(raw_df_list)>0:
                 concatenated_df=pd.concat(raw_df_list,axis=0, ignore_index=True)
+                self.main_df = concatenated_df
+                return True
                 #dateparse = lambda dates: [pd.datetime.strptime(d, '%Y-%m-%d %H:%M') for d in dates]
                 # new_pm_df=pd.read_csv(pm_file, encoding='latin1', skiprows=[self.rows_to_skip],dtype='object', parse_dates = [self.timestamp_column], date_parser = dateparse)
                 # if set(new_pm_df.columns)!=set(new_pm_df.columns):
@@ -103,8 +109,9 @@ class function_subset:
                 #     concatenated_df=new_pm_df.append(concatenated_df,sort=False)
                 # else:
                 #     concatenated_df=concatenated_df.append(new_pm_df,sort=False)
-            self.main_df=concatenated_df
-            return True
+            else:
+                return False
+
         else:
             return False
     ################################################
@@ -195,9 +202,9 @@ class function_subset:
 
     ####################################################
     # def export_me_to_postgresql(self,sql_host_name,tempo_db_name, sql_user, sql_password):
-    #     sql_str_master_conn = sql_str_crt_conn(sql_host_name, None, sql_user, sql_password)
-    #     if not chk_sql_db_exist(sql_str_master_conn, tempo_db_name):
-    #         if not create_sql_db(sql_str_master_conn, tempo_db_name):
+    #     sql_str_Hourly_conn = sql_str_crt_conn(sql_host_name, None, sql_user, sql_password)
+    #     if not chk_sql_db_exist(sql_str_Hourly_conn, tempo_db_name):
+    #         if not create_sql_db(sql_str_Hourly_conn, tempo_db_name):
     #             print("New Temporary DB not created")
     #             return
     #         sql_str_tempo_db_conn = sql_str_crt_conn(sql_host_name, tempo_db_name, "postgres", "123456-c")

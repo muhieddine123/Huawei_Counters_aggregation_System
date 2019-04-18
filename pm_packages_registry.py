@@ -19,7 +19,7 @@ class pm_packages_registry:
         self.sql_host_name=sql_host_name
         self.sql_user=sql_user
         self.timestamp_column='Result Time'
-        self.db_name="HourlyStatistics"
+        self.db_name="Statistics"
         self.sql_password=sql_password
         self.registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry.csv', encoding='latin1')
         self.bookeeper_schema_alch_engine = create_engine(
@@ -34,7 +34,7 @@ class pm_packages_registry:
             sql_str_crt_prim_key = "ALTER TABLE \""+self.bookkeeper_schema+"\".\"" + self.bookkeeper_tb_name + "\" ALTER COLUMN \"" + self.timestamp_column + "\" SET NOT NULL, ALTER COLUMN \"Entity_Type_SQL\" SET NOT NULL, ALTER COLUMN \"Object_Type_SQL\" SET NOT NULL, ALTER COLUMN \"FunctionSubSet Name SQL\" SET NOT NULL, ALTER COLUMN \"FunctionSubSet_id\" SET NOT NULL, ADD PRIMARY KEY (\"" + self.timestamp_column + "\", \"Entity_Type_SQL\", \"Object_Type_SQL\",\"FunctionSubSet Name SQL\",\"FunctionSubSet_id\");"
             self.bookeeper_schema_alch_engine.execute(sql_str_crt_prim_key)
 
-        self.maximum_days_backword_allowed_in_registry=6
+        self.maximum_days_backword_allowed_in_registry=16
         self.pivoted_counter_mapping_df=pd.read_csv(os.getcwd() + "\\" + 'pivoted_counter_mapping.csv', encoding='latin-1',engine='python',dtype='object', error_bad_lines=False)
         self.pivoted_counter_mapping_df['FunctionSubSet_id'] = pd.to_numeric(self.pivoted_counter_mapping_df['FunctionSubSet_id'])
 
@@ -165,6 +165,7 @@ class pm_packages_registry:
         for pm_package_full_path in list_of_pm_full_paths:
             with open(pm_package_full_path) as f:
                 first_line = f.readline()
+
             header_list = list(reader([first_line]))[0]
             sample_counter_name=header_list[4]
             FunctionSubSet_id = ntpath.basename(pm_package_full_path).split("_")[1]
