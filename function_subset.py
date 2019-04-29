@@ -97,6 +97,9 @@ class function_subset:
                 except Exception as e:
                     print("problem in reading the package file:"+pm_file)
                     print(str(e.args))
+                    if "EOF inside string starting at row" in str(e.args):
+                        os.remove(pm_file)
+
             if len(raw_df_list)>0:
                 concatenated_df=pd.concat(raw_df_list,axis=0, ignore_index=True)
                 self.main_df = concatenated_df

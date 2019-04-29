@@ -39,7 +39,7 @@ def launch_the_process(list_of_parallel_func_arguments):
      #     for result in result_list:
      #         result.get()
      processes_items_list = []
-     number_of_parallel_processes=40
+     number_of_parallel_processes=30
      step_size=min(number_of_parallel_processes,len(list_of_parallel_func_arguments))
      # chunck=[]
      # list_of_chuncks=[]
@@ -63,7 +63,7 @@ def launch_the_process(list_of_parallel_func_arguments):
              process_item = multiprocessing.Process(target=oop_one_process_multiple_serial_pm_packages, args=(args_set,))
              processes_items_list.append(process_item)
              process_item.start()
-             print("staaaaaaarting new process"+str(i))
+             print("starting new process"+str(i))
 
      for process_item in processes_items_list:
          process_item.join()
@@ -78,6 +78,7 @@ def initial_launch():
     sql_password = "123456-c"
     sql_host_name = "localhost"
     bookkeeper_schema_name = "bookkeeper"
+    maximum_imported_packages_per_one_process=100
 
     #pivoted_counter_mapping_df = pivot_counter_mapping_table()
     pivoted_counter_mapping_df = pd.read_csv(os.getcwd() + "\\" + 'pivoted_counter_mapping.csv', encoding='latin-1',
@@ -107,6 +108,7 @@ def initial_launch():
     for index, row in grouped_per_pm_registry_df.iterrows():
         # print("total number of packages "+str(len(grouped_per_pm_registry_df)))
         list_of_PM_paths = list(sorted(row['set_of_pm_paths']))
+        list_of_PM_paths=list_of_PM_paths[:min(maximum_imported_packages_per_one_process,len(list_of_PM_paths))]
         #shortened_list_of_PM_paths=list_of_PM_paths[0:min(maximum_number_of_processed_PMs_per_process, len(list_of_PM_paths))]
         if len(list_of_PM_paths) > 0:
             set_of_arguments = (
@@ -121,7 +123,7 @@ if __name__ == '__main__':
     for i in range(0,5000):
         list_of_parallel_func_arguments=initial_launch()
         launch_the_process(list_of_parallel_func_arguments)
-        time.sleep(1000)
+        time.sleep(10)
 
 
 

@@ -34,7 +34,7 @@ class pm_packages_registry:
             sql_str_crt_prim_key = "ALTER TABLE \""+self.bookkeeper_schema+"\".\"" + self.bookkeeper_tb_name + "\" ALTER COLUMN \"" + self.timestamp_column + "\" SET NOT NULL, ALTER COLUMN \"Entity_Type_SQL\" SET NOT NULL, ALTER COLUMN \"Object_Type_SQL\" SET NOT NULL, ALTER COLUMN \"FunctionSubSet Name SQL\" SET NOT NULL, ALTER COLUMN \"FunctionSubSet_id\" SET NOT NULL, ADD PRIMARY KEY (\"" + self.timestamp_column + "\", \"Entity_Type_SQL\", \"Object_Type_SQL\",\"FunctionSubSet Name SQL\",\"FunctionSubSet_id\");"
             self.bookeeper_schema_alch_engine.execute(sql_str_crt_prim_key)
 
-        self.maximum_days_backword_allowed_in_registry=16
+        self.maximum_days_backword_allowed_in_registry=20
         self.pivoted_counter_mapping_df=pd.read_csv(os.getcwd() + "\\" + 'pivoted_counter_mapping.csv', encoding='latin-1',engine='python',dtype='object', error_bad_lines=False)
         self.pivoted_counter_mapping_df['FunctionSubSet_id'] = pd.to_numeric(self.pivoted_counter_mapping_df['FunctionSubSet_id'])
 
