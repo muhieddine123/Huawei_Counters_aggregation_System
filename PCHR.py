@@ -39,7 +39,7 @@ def launch_the_process(list_of_parallel_func_arguments):
      #     for result in result_list:
      #         result.get()
      processes_items_list = []
-     number_of_parallel_processes=30
+     number_of_parallel_processes=40
      step_size=min(number_of_parallel_processes,len(list_of_parallel_func_arguments))
      # chunck=[]
      # list_of_chuncks=[]

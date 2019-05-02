@@ -346,7 +346,7 @@ class postgres_worker_v2:
     def get_sql_columns_names_in_tb(self,schema_name,tb_name):
         sql_str_get_cols_names_and_types="""SELECT COLUMN_NAME,	data_type FROM information_schema.COLUMNS WHERE
         TABLE_NAME =\'"""+tb_name+"\' AND table_catalog = \'"+self.db_name+"""\' 
-        AND table_schema = '"""+schema_name+"\';"
+        AND table_schema = '"""+schema_name+"\' ORDER BY ordinal_position;"
         q=self.Hourly_schema_alch_engine.execute(sql_str_get_cols_names_and_types)
         query_fetched_data=q.fetchall()
         list_of_cols_names=[]
