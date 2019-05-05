@@ -11,7 +11,7 @@ from postgres_worker_v2 import *
 
 
 def pivot_counter_mapping_table():
-    counter_mapping_df = pd.read_csv("Counters mapping.csv", encoding='latin1')
+    counter_mapping_df = pd.read_csv("Counters mapping.csv", encoding='latin1', error_bad_lines=False)
     counter_mapping_df=counter_mapping_df[counter_mapping_df['Import']=='YES'][['Entity_Type_SQL','Object_Type_SQL','Counter_SQL_Name','neTypeName','Object Name','Counter ID','Counter Name',' Counter Unit','Formula','Counter Description','FunctionSubSet_id','FunctionSubSet Name SQL','FunctionSubSet Name','functionsetid','FunctionSet Name','neTypeId','Import','Import Rank'
 ]]
     counter_mapping_df.sort_values(['Entity_Type_SQL','Object_Type_SQL','FunctionSubSet_id','Counter Name'],ascending=[True,True,True,True],inplace=True)
@@ -642,7 +642,7 @@ if __name__ == '__main__':
 #     print(list_of_func_subsets)
 #     if len(list_of_func_subsets)==0:
 #         return None
-#     func_df=pd.read_csv("Counters mapping.csv",encoding='latin1')
+#     func_df=pd.read_csv("Counters mapping.csv",encoding='latin1', error_bad_lines=False)
 #     func_df_filtered=pd.DataFrame([])
 #     #func_df_filtered=func_df[(func_df['Import']=='YES') & (func_df['FunctionSubSet_id']==int(list_of_func_subsets[0]))][['FunctionSubSet Name SQL','FunctionSubSet_id','Entity_Type_SQL']]
 #     for func_subset_id in list_of_func_subsets:

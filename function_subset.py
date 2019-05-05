@@ -17,7 +17,7 @@ class function_subset:
         self.not_counters_columns=['Result Time','Object Name','Reliability','Granularity Period']
         self.main_df=None
         #self.pivoted_counter_mapping_df = pd.read_csv(os.getcwd() + "\\" + 'pivoted_counter_mapping.csv', encoding='latin1',engine='python')
-        self.parameters = pd.read_csv('Parameters.csv', encoding='latin1')
+        self.parameters = pd.read_csv('Parameters.csv', encoding='latin1', error_bad_lines=False)
         self.rows_to_skip=  int(self.parameters['skipping rows'].iloc[0])
         self.is_transformed=False
         if entity_type is not None and object_type is not None and func_subset_id is not None:
@@ -31,7 +31,7 @@ class function_subset:
 
     ################################################
     def check_validity(self):
-        counter_mapping_df = pd.read_csv("Counters mapping.csv", encoding='latin1')
+        counter_mapping_df = pd.read_csv("Counters mapping.csv", encoding='latin1', error_bad_lines=False)
         tempo_row = counter_mapping_df[
             (counter_mapping_df['FunctionSubSet_id'] == self.func_subset_id) & (counter_mapping_df['Entity_Type_SQL'] == self.entity_type) & (counter_mapping_df['Object_Type_SQL'] == self.object_type)]
         if tempo_row.empty:
@@ -87,10 +87,10 @@ class function_subset:
         if len(checked_list_of_pm_files)>0:
             dateparse = lambda dates: [pd.datetime.strptime(d, '%Y-%m-%d %H:%M') for d in dates]
             raw_df_list=[]
-            #raw_df_list = raw_df_list.append(pd.read_csv(checked_list_of_pm_files[0], encoding='latin1', skiprows=[self.rows_to_skip],dtype='object', parse_dates = [ self.timestamp_column], date_parser = dateparse))
+            #raw_df_list = raw_df_list.append(pd.read_csv(checked_list_of_pm_files[0], encoding='latin1', skiprows=[self.rows_to_skip],dtype='object', parse_dates = [ self.timestamp_column], date_parser = dateparse), error_bad_lines=False)
             for pm_file in checked_list_of_pm_files:
                 try:
-                    raw_df=pd.read_csv(pm_file, encoding='latin1', skiprows=[self.rows_to_skip], dtype='object', parse_dates=[self.timestamp_column], date_parser=dateparse)
+                    raw_df=pd.read_csv(pm_file, encoding='latin1', skiprows=[self.rows_to_skip], dtype='object', parse_dates=[self.timestamp_column], date_parser=dateparse, error_bad_lines=False)
                     raw_df['Result Time'] = datetime.strptime(ntpath.basename(pm_file).split("_")[3],
                                                         "%Y%m%d%H%M%S")
                     raw_df_list.append(raw_df)
@@ -163,7 +163,7 @@ class function_subset:
 
     ################################################
     def get_func_subset_name(self):
-        counters_map_df = pd.read_csv("Counters mapping.csv", encoding='latin1')
+        counters_map_df = pd.read_csv("Counters mapping.csv", encoding='latin1', error_bad_lines=False)
         func_subset_name=counters_map_df[\
             (counters_map_df['Entity_Type_SQL']==self.entity_type) \
             &(counters_map_df['Object_Type_SQL'] == self.object_type) \
@@ -173,7 +173,7 @@ class function_subset:
 
     ########################################################
     def get_ctr_sql_names(self):
-        counters_map_df = pd.read_csv("Counters mapping.csv", encoding='latin1')
+        counters_map_df = pd.read_csv("Counters mapping.csv", encoding='latin1', error_bad_lines=False)
         filtered_counters_map_df=counters_map_df[\
             (counters_map_df['Entity_Type_SQL']==self.entity_type) \
             &(counters_map_df['Object_Type_SQL'] == self.object_type) \
@@ -196,7 +196,7 @@ class function_subset:
     def concatenate_pm_file_to_me(self, path_to_pm_file):
         print("importing:" + path_to_pm_file)
         dateparse = lambda dates: [pd.datetime.strptime(d, '%Y-%m-%d %H:%M') for d in dates]
-        df = pd.read_csv(path_to_pm_file, encoding='latin1', skiprows=[self.rows_to_skip], dtype='object', engine='python', parse_dates=[self.timestamp_column], date_parser=dateparse)
+        df = pd.read_csv(path_to_pm_file, encoding='latin1', skiprows=[self.rows_to_skip], dtype='object', engine='python', parse_dates=[self.timestamp_column], date_parser=dateparse, error_bad_lines=False)
         if self.main_df is not None:
             self.main_df=pd.concat(self.main_df,df,axis=0, ignore_index=True)
         else:
@@ -277,7 +277,7 @@ class function_subset:
 
     ################################################
     def get_sample_counter(self):
-        counter_mapping_df = pd.read_csv("Counters mapping.csv", encoding='latin1')
+        counter_mapping_df = pd.read_csv("Counters mapping.csv", encoding='latin1', error_bad_lines=False)
         tempo_row = counter_mapping_df[
             (counter_mapping_df['FunctionSubSet_id'] == self.func_subset_id) \
             & (counter_mapping_df['Entity_Type_SQL'] == self.entity_type) \
@@ -286,7 +286,7 @@ class function_subset:
         return sample_counter_name
 ###########################################################################
     def get_regex_expression(self,Entity_Type_SQL, Object_Type_SQL):
-        Regexs = pd.read_csv('RegexList.csv')
+        Regexs = pd.read_csv('RegexList.csv', error_bad_lines=False)
         filtered_regex_row = Regexs[(Regexs['Entity_Type_SQL'] == Entity_Type_SQL) & (Regexs['Object_Type_SQL'] == Object_Type_SQL)]
 
         if not filtered_regex_row.empty:
@@ -296,7 +296,7 @@ class function_subset:
 ##########################################################################
         ###############################################################
     def get_new_dimensions(self,Entity_Type_SQL, Object_Type_SQL):
-        Regexs = pd.read_csv('RegexList.csv')
+        Regexs = pd.read_csv('RegexList.csv', error_bad_lines=False)
         filtered_regex_row = Regexs[
             (Regexs['Entity_Type_SQL'] == Entity_Type_SQL) & (Regexs['Object_Type_SQL'] == Object_Type_SQL)]
 

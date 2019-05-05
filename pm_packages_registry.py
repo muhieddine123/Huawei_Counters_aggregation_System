@@ -21,7 +21,7 @@ class pm_packages_registry:
         self.timestamp_column='Result Time'
         self.db_name="Statistics"
         self.sql_password=sql_password
-        self.registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry.csv', encoding='latin1')
+        self.registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry.csv', encoding='latin1', error_bad_lines=False)
         self.bookeeper_schema_alch_engine = create_engine(
             "postgresql+psycopg2://" + self.sql_user + ":" + self.sql_password + "@" + self.sql_host_name + ":5432/" + self.db_name)
 
@@ -213,7 +213,7 @@ class pm_packages_registry:
         all_files_paths_df=pd.merge(all_files_paths_df,to_be_imported_function_subsets_df,left_on='FunctionSubSet_id',right_on='FunctionSubSet_id',how='inner')
         all_files_in_loc_dir = all_files_paths_df['File Full Path'].tolist()
         in_registry_file_pathes = self.registry_df['File Full Path'].tolist()
-        unidentified_registered_df=pd.read_csv(os.getcwd() + "\\" + 'Unidentified_Raw_Files_Registry.csv', sep=',')
+        unidentified_registered_df=pd.read_csv(os.getcwd() + "\\" + 'Unidentified_Raw_Files_Registry.csv', sep=',', error_bad_lines=False)
         unidentified_registered_list=unidentified_registered_df['File Full Path'].tolist()
         registered_identified_and_unidentified_list=in_registry_file_pathes+unidentified_registered_list
         new_files_list = np.setdiff1d(all_files_in_loc_dir, registered_identified_and_unidentified_list)
@@ -292,7 +292,7 @@ class pm_packages_registry:
         return df
 
     def archive_old_files_in_registry(self):
-        registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry.csv', encoding='latin1')
+        registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry.csv', encoding='latin1', error_bad_lines=False)
         year, month, day, hour, minute = time.strftime("%Y,%m,%d,%H,%M").split(',')
         registry_df_new=registry_df[registry_df[self.timestamp_column]>=datetime(int(year), int(month), int(day))-datetime.timedelta(days=self.maximum_days_backword_allowed_in_registry)]
         year, month, day, hour, minute = time.strftime("%Y,%m,%d,%H,%M").split(',')
