@@ -1,0 +1,6 @@
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Call_Drop";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Call_Duration";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Cell_Status";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Channel_Assignment_Failure";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Channel_Assignment_Request";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Channel_Configuration";

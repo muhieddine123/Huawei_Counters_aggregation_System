@@ -1,0 +1,3 @@
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Location_Update";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Maximum_Busy_Channel";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@MR_Quantity";

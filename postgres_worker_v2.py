@@ -30,7 +30,7 @@ class postgres_worker_v2:
         self.bookkeeper_tb_name="bookkeeper"
         self.data_tb_name=None
         self.Hourly_schema_alch_engine = create_engine(
-            "postgresql+psycopg2://" + self.sql_user + ":" + self.sql_password + "@" + self.sql_host_name + ":5432/" + self.db_name)
+            "postgresql+psycopg2://" + self.sql_user + ":" + self.sql_password + "@" + self.sql_host_name + ":5432/" + self.db_name,connect_args={"options": "-c statement_timeout=3600000"})
         if not self.chk_sql_db_exist(self.db_name):
             self.create_sql_db(self.db_name)
         self.Hourly_schema_alch_engine.execute("SET search_path TO public;")
@@ -159,6 +159,7 @@ class postgres_worker_v2:
             output.seek(0)
             cur.copy_from(output, "\"" + self.static_schema_name + "\".\"" + self.data_tb_name + "\"",
                            sep='|', null="")  # null values become ''
+
             conn.commit()
             return True
 
@@ -380,8 +381,8 @@ class postgres_worker_v2:
         return True
     ##############################################################################################
     def get_sql_columns_names_and_types(self,input_list_of_lists):
-        types_dictionary = {'float64': 'numeric(24)', 'datetime64[ns]': 'timestamp(6)', 'object': 'text COLLATE \"pg_catalog\".\"default\"',
-                            'float32': 'numeric(24)'}
+        types_dictionary = {'float64': 'float(53)', 'datetime64[ns]': 'timestamp(6)', 'object': 'text COLLATE \"pg_catalog\".\"default\"',
+                            'float32': 'float(53)'}
         sql_output_list_of_lists = [[item[0],types_dictionary[str(item[1])]] for item in input_list_of_lists]
         return sql_output_list_of_lists
 

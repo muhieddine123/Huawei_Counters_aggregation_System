@@ -1,0 +1,6 @@
+delete from "Hourly"."BSC6900GSM@GSM Cell@PDCH_Resource" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Power_Control_Message" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Power_Statistics" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@SDCCH_Call_Drop"  WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Short_Message" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Speech_Frame_in_Customized_MR" WHERE "Result Time"::date <now()::date- 12;

@@ -1,0 +1,4 @@
+delete from "Hourly"."BTS3900@Cell@MR" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Outgoing_Inter-RAT_Handover" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Outgoing_Inter-RAT_Handover_1" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Outgoing_Intra-RAT_Handover" WHERE "Result Time"::date <now()::date- 12;

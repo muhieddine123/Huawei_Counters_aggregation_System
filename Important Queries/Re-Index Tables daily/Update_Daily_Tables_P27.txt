@@ -1,0 +1,4 @@
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@MR_upon_Handover";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@MS_Capability";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Outgoing_External_Inter-Cell_Handover";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Outgoing_Internal_Inter-Cell_Handover";

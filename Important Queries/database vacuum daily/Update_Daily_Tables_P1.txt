@@ -1,0 +1,4 @@
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Uplink_GPRS_RLC_Data_Transfer";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Abis_Interface_Paging";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Abis_Interface_Resource";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Assignment";

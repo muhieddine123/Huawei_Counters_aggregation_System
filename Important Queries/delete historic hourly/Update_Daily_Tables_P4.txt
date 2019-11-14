@@ -1,0 +1,3 @@
+delete from "Hourly"."BSC6900GSM@GSM Cell@Location_Update" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Maximum_Busy_Channel" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@MR_Quantity" WHERE "Result Time"::date <now()::date- 12;

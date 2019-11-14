@@ -1,0 +1,7 @@
+delete from "Hourly"."BSC6900UMTS@Cell@RRC_Status" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@Soft_Handover" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@Traffic" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@Traffic_Volume_and_Data_Rate" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@TX_and_RX_Power" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@UL_Interoperability" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@User_Defined_Table1" WHERE "Result Time"::date <now()::date- 12;

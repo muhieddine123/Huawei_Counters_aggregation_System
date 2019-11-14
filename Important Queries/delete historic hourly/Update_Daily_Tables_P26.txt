@@ -1,0 +1,6 @@
+delete from "Hourly"."BSC6900GSM@GSM Cell@Call_Drop" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Call_Duration" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Cell_Status" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Channel_Assignment_Failure" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Channel_Assignment_Request" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Channel_Configuration" WHERE "Result Time"::date <now()::date- 12;

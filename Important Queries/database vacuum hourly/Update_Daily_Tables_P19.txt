@@ -1,0 +1,7 @@
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equipm@SFN_Cell_Sector_Equipment_E-RAB";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@Cell_Algorithm";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@Cell_Emergency_Call";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@Cell_User_Quantity";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@Channel_Quality";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@CQI";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@DRB";

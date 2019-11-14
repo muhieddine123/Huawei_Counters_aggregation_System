@@ -1,0 +1,8 @@
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@Common_Channel";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@Compressed_Mode";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@CS_RAB_Modification";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@CS_RAB_Setup";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@CS_Service_Quality";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@Hard_Handover";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@HSDPA";

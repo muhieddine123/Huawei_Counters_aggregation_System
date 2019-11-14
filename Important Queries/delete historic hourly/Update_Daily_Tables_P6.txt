@@ -1,0 +1,6 @@
+delete from "Hourly"."BSC6900GSM@GSM Cell@TCH_Call_Drop" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@TRX" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Uplink_EGPRS_RLC_Data_Transfer" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Uplink_EGPRS_TBF_Establishment_and_Release" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Uplink_GPRS_TBF_Establishment_and_Release" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Uplink_LLC_Data_Transfer" WHERE "Result Time"::date <now()::date- 12;

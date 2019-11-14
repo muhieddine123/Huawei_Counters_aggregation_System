@@ -1,0 +1,7 @@
+delete from "Hourly"."BTS3900@Cell@E-RAB_Modification" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@E-RAB_Release" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@E-RAB_Setup" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@E-RAB_Setup_Failure" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Incoming_Inter-RAT_Handover" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Incoming_Intra-RAT_Handover" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Incoming_Intra-RAT_Handover_over_X2" WHERE "Result Time"::date <now()::date- 12;

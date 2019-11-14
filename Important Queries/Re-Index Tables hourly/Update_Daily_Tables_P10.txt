@@ -1,0 +1,7 @@
+REINDEX TABLE "Hourly"."BTS3900@IPPM@IPPM";
+REINDEX TABLE "Hourly"."BTS3900@Local Cell@Cell_Traffic";
+REINDEX TABLE "Hourly"."BTS3900@Local Cell@HSDPA";
+REINDEX TABLE "Hourly"."BTS3900@Local Cell@HSDPA_2";
+REINDEX TABLE "Hourly"."BTS3900@NodeB Board@NodeB_Board_Service";
+REINDEX TABLE "Hourly"."BTS3900@NodeB@Iub_per_NodeB";
+REINDEX TABLE "Hourly"."BTS3900@S1 Link@S1_Link";

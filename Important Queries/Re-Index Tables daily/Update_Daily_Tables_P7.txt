@@ -1,0 +1,3 @@
+REINDEX TABLE "Daily"."BSC6900GSM@Site@FlexAbis";
+REINDEX TABLE "Daily"."BSC6900GSM@TRX@Customized_MR";
+REINDEX TABLE "Daily"."BSC6900GSM@TRX@Interference_Band";

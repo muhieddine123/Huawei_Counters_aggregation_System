@@ -1,0 +1,7 @@
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@PS_RAB_Setup_Failure";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@RAB_Release";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@RB_Procedure";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@RRC_Connection_Reject";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@RRC_Connection_Release";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@RRC_Connection_Setup";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@RRC_MR";

@@ -1,0 +1,7 @@
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@HSUPA";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@Inter-RAT_Handover";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@Measurement_of_Channel_Reconfiguration_to_DCH";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@Multi-RAB_Service";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@Paging";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@PS_RAB_Modification";
+VACUUM ANALYZE "Daily"."BSC6900UMTS@Cell@PS_RAB_Setup";

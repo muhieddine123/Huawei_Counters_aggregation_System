@@ -1,0 +1,6 @@
+delete from "Hourly"."BSC6900GSM@TRX@Uplink-and-Downlink_Balance" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@Algorithm" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@Algorithm_2" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@BLER" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@Cell_Update" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@CNOperator" WHERE "Result Time"::date <now()::date- 12;

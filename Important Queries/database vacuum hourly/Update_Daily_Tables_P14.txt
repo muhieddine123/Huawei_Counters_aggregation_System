@@ -1,0 +1,6 @@
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Cell@RRC_Status";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Cell@Soft_Handover";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Cell@Traffic";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Cell@Traffic_Volume_and_Data_Rate";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Cell@TX_and_RX_Power";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Cell@UL_Interoperability";

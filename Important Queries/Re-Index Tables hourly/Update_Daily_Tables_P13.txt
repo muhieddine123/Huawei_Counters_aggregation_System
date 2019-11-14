@@ -1,0 +1,7 @@
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@PS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@RB_Procedure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@RRC_Connection_Reject";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@RRC_Connection_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@RRC_Connection_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@RRC_MR";

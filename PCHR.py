@@ -32,6 +32,7 @@ def chunks(l, n):
         yield l[i:i + n]
 
 def launch_the_process(list_of_parallel_func_arguments):
+     number_of_parallel_processes=100
      if list_of_parallel_func_arguments is None:
          return
      # with Pool(processes=10) as pool:
@@ -39,7 +40,7 @@ def launch_the_process(list_of_parallel_func_arguments):
      #     for result in result_list:
      #         result.get()
      processes_items_list = []
-     number_of_parallel_processes=40
+
      step_size=min(number_of_parallel_processes,len(list_of_parallel_func_arguments))
      # chunck=[]
      # list_of_chuncks=[]
@@ -78,14 +79,13 @@ def initial_launch():
     sql_password = "123456-c"
     sql_host_name = "localhost"
     bookkeeper_schema_name = "bookkeeper"
-    maximum_imported_packages_per_one_process=100
+    maximum_imported_packages_per_one_process=80
 
     #pivoted_counter_mapping_df = pivot_counter_mapping_table()
     pivoted_counter_mapping_df = pd.read_csv(os.getcwd() + "\\" + 'pivoted_counter_mapping.csv', encoding='latin-1',
                                              engine='python', dtype='object', error_bad_lines=False)
     pivoted_counter_mapping_df['FunctionSubSet_id'] = pd.to_numeric(
         pivoted_counter_mapping_df['FunctionSubSet_id'])
-
     # update_the_registry(raw_files_dir)
     # with open('pivoted_counter_mapping.pickle','rb') as f:
     # pivoted_counter_mapping_df = pickle.load(f)
@@ -120,7 +120,7 @@ def initial_launch():
 
     return list_of_parallel_func_arguments
 if __name__ == '__main__':
-    for i in range(0,5000):
+    for i in range(0,50000):
         list_of_parallel_func_arguments=initial_launch()
         launch_the_process(list_of_parallel_func_arguments)
         time.sleep(10)

@@ -1,0 +1,3 @@
+VACUUM ANALYZE "Daily"."BSC6900GSM@TRX@Receive_Quality";
+VACUUM ANALYZE "Daily"."BSC6900GSM@TRX@Receive_Quality_Distribution";
+VACUUM ANALYZE "Daily"."BSC6900GSM@TRX@RQI_based_on_TA";

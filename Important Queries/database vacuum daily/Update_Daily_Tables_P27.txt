@@ -1,0 +1,4 @@
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@MR_upon_Handover";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@MS_Capability";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Outgoing_External_Inter-Cell_Handover";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Outgoing_Internal_Inter-Cell_Handover";

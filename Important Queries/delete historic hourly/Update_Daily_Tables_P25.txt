@@ -1,0 +1,7 @@
+delete from "Hourly"."BTS3900@Cell@UE_Context_Release" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@UE_Context_Setup" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@eNodeB@eNodeB_RIM" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@eNodeB@eNodeB_SCTP" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@eNodeB@eNodeB_Throughput" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity" WHERE "Result Time"::date <now()::date- 12;

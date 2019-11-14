@@ -1,0 +1,8 @@
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@Hard_Handover";
+REINDEX TABLE "Daily"."BSC6900UMTS@Cell@HSDPA";

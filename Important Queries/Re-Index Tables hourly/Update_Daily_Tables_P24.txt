@@ -1,0 +1,7 @@
+REINDEX TABLE "Hourly"."BTS3900@Cell@RRC_Setup_Failure";
+REINDEX TABLE "Hourly"."BTS3900@Cell@Security_Mode";
+REINDEX TABLE "Hourly"."BTS3900@Cell@Throughput_and_Data_Volume";
+REINDEX TABLE "Hourly"."BTS3900@Cell@Throughput_and_Data_Volume_1";
+REINDEX TABLE "Hourly"."BTS3900@Cell@Throughput_and_Data_Volume_per_Path_Loss_Range";
+REINDEX TABLE "Hourly"."BTS3900@Cell@Throughput_Distribution";
+REINDEX TABLE "Hourly"."BTS3900@Cell@UE_Context_Modification";

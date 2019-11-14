@@ -1,0 +1,3 @@
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Location_Update";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Maximum_Busy_Channel";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@MR_Quantity";

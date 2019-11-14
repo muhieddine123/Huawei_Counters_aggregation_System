@@ -1,0 +1,515 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Hard_Handover";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@HSDPA";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Hard_Handover";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@HSDPA";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Hard_Handover";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@HSDPA";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Hard_Handover";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@HSDPA";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Hard_Handover";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@HSDPA";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Hard_Handover";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@HSDPA";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Common_Channel";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Compressed_Mode";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Hard_Handover";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@HSDPA";

@@ -1,0 +1,4 @@
+delete from "Hourly"."BSC6900GSM@GSM Cell@Uplink_GPRS_RLC_Data_Transfer" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Abis_Interface_Paging" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Abis_Interface_Resource" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Assignment" WHERE "Result Time"::date <now()::date- 12;

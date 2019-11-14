@@ -1,0 +1,3 @@
+VACUUM ANALYZE "Daily"."BSC6900GSM@Site@FlexAbis";
+VACUUM ANALYZE "Daily"."BSC6900GSM@TRX@Customized_MR";
+VACUUM ANALYZE "Daily"."BSC6900GSM@TRX@Interference_Band";

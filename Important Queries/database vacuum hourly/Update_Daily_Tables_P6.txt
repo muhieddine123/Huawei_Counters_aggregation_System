@@ -1,0 +1,6 @@
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@TCH_Call_Drop";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@TRX";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Uplink_EGPRS_RLC_Data_Transfer";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Uplink_EGPRS_TBF_Establishment_and_Release";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Uplink_GPRS_TBF_Establishment_and_Release";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Uplink_LLC_Data_Transfer";

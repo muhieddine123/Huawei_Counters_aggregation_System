@@ -1,0 +1,6 @@
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@PDCH_Resource";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Power_Control_Message";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Power_Statistics";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@SDCCH_Call_Drop";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Short_Message";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Speech_Frame_in_Customized_MR";

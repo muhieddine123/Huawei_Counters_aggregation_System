@@ -1,0 +1,490 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Release";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_RIM";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_SCTP";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_Throughput";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Release";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_RIM";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_SCTP";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_Throughput";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Release";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_RIM";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_SCTP";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_Throughput";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Release";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_RIM";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_SCTP";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_Throughput";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Release";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_RIM";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_SCTP";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_Throughput";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Release";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_RIM";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_SCTP";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_Throughput";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Release";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_RIM";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_SCTP";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_Throughput";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Release";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell@UE_Context_Setup_Failure";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_RIM";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_SCTP";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_Throughput";
+VACUUM ANALYZE "Hourly"."BTS3900@eNodeB@eNodeB_User_Quantity";

@@ -1,0 +1,8 @@
+delete from "Hourly"."BSC6900UMTS@Cell@Common_Channel" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@Compressed_Mode" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@CS_RAB_Modification" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@CS_RAB_Setup_Failure" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@CS_Service_Quality" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@Hard_Handover" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Cell@HSDPA" WHERE "Result Time"::date <now()::date- 12;

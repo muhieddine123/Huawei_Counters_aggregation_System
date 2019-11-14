@@ -1,0 +1,7 @@
+REINDEX TABLE "Daily"."BTS3900@Cell Sector Equipm@SFN_Cell_Sector_Equipment_E-RAB";
+REINDEX TABLE "Daily"."BTS3900@Cell@Cell_Algorithm";
+REINDEX TABLE "Daily"."BTS3900@Cell@Cell_Emergency_Call";
+REINDEX TABLE "Daily"."BTS3900@Cell@Cell_User_Quantity";
+REINDEX TABLE "Daily"."BTS3900@Cell@Channel_Quality";
+REINDEX TABLE "Daily"."BTS3900@Cell@CQI";
+REINDEX TABLE "Daily"."BTS3900@Cell@DRB";

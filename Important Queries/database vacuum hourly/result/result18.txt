@@ -1,0 +1,424 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+VACUUM ANALYZE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+VACUUM ANALYZE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+VACUUM ANALYZE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+VACUUM ANALYZE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+VACUUM ANALYZE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+VACUUM ANALYZE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+VACUUM ANALYZE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+VACUUM ANALYZE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+VACUUM ANALYZE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";

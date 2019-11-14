@@ -1,0 +1,7 @@
+delete from "Hourly"."BTS3900@Cell@RRC_Setup_Failure" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Security_Mode" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Throughput_and_Data_Volume" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Throughput_and_Data_Volume_1" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Throughput_and_Data_Volume_per_Path_Loss_Range" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Throughput_Distribution" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@UE_Context_Modification" WHERE "Result Time"::date <now()::date- 12;

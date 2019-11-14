@@ -1,0 +1,432 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@RNC@RAB_Release";
+VACUUM ANALYZE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual";

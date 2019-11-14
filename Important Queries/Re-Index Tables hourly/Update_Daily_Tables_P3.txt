@@ -1,0 +1,3 @@
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Flow_Control";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Immediate_Assignment";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Incoming_External_Inter-Cell_Handover";

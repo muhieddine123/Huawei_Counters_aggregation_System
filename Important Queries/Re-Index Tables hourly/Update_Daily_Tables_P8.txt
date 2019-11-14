@@ -1,0 +1,3 @@
+REINDEX TABLE "Hourly"."BSC6900GSM@TRX@Receive_Quality";
+REINDEX TABLE "Hourly"."BSC6900GSM@TRX@Receive_Quality_Distribution";
+REINDEX TABLE "Hourly"."BSC6900GSM@TRX@RQI_based_on_TA";

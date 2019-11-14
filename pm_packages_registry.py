@@ -21,7 +21,13 @@ class pm_packages_registry:
         self.timestamp_column='Result Time'
         self.db_name="Statistics"
         self.sql_password=sql_password
-        self.registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry.csv', encoding='latin1', error_bad_lines=False)
+        try:
+            self.registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry.csv', encoding='latin1', error_bad_lines=False)
+        except:
+            try:
+                self.registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry2.csv', encoding='latin1', error_bad_lines=False)
+            except:
+                self.registry_df = pd.read_csv(os.getcwd() + "\\" + 'Raw_Files_Registry_Empty.csv', encoding='latin1', error_bad_lines=False)
         self.bookeeper_schema_alch_engine = create_engine(
             "postgresql+psycopg2://" + self.sql_user + ":" + self.sql_password + "@" + self.sql_host_name + ":5432/" + self.db_name)
 
@@ -34,7 +40,7 @@ class pm_packages_registry:
             sql_str_crt_prim_key = "ALTER TABLE \""+self.bookkeeper_schema+"\".\"" + self.bookkeeper_tb_name + "\" ALTER COLUMN \"" + self.timestamp_column + "\" SET NOT NULL, ALTER COLUMN \"Entity_Type_SQL\" SET NOT NULL, ALTER COLUMN \"Object_Type_SQL\" SET NOT NULL, ALTER COLUMN \"FunctionSubSet Name SQL\" SET NOT NULL, ALTER COLUMN \"FunctionSubSet_id\" SET NOT NULL, ADD PRIMARY KEY (\"" + self.timestamp_column + "\", \"Entity_Type_SQL\", \"Object_Type_SQL\",\"FunctionSubSet Name SQL\",\"FunctionSubSet_id\");"
             self.bookeeper_schema_alch_engine.execute(sql_str_crt_prim_key)
 
-        self.maximum_days_backword_allowed_in_registry=20
+        self.maximum_days_backword_allowed_in_registry=3
         self.pivoted_counter_mapping_df=pd.read_csv(os.getcwd() + "\\" + 'pivoted_counter_mapping.csv', encoding='latin-1',engine='python',dtype='object', error_bad_lines=False)
         self.pivoted_counter_mapping_df['FunctionSubSet_id'] = pd.to_numeric(self.pivoted_counter_mapping_df['FunctionSubSet_id'])
 
@@ -231,6 +237,7 @@ class pm_packages_registry:
         self.update_sql_importing_status()
         self.registry_df.sort_values(by=[self.timestamp_column], inplace=True, ascending=False)
         self.registry_df.to_csv(os.getcwd()+"\\"+'Raw_Files_Registry.csv', sep=',', index=False)
+        self.registry_df.to_csv(os.getcwd()+"\\"+'Raw_Files_Registry2.csv', sep=',', index=False)
 
         return True
 
@@ -249,9 +256,11 @@ class pm_packages_registry:
         already_imported_pms_df['FunctionSubSet_id']=pd.to_numeric(already_imported_pms_df['FunctionSubSet_id'])
         if self.registry_df.shape[0]==0:
             return None
-        self.registry_df['FunctionSubSet_id']=pd.to_numeric(self.registry_df['FunctionSubSet_id'])
+        self.registry_df['FunctionSubSet_id']=pd.to_numeric(self.registry_df['FunctionSubSet_id'],errors='coerce')
+        self.registry_df.dropna(subset=['FunctionSubSet_id'])
+
         self.registry_df.loc[:, self.timestamp_column] = pd.to_datetime(self.registry_df[self.timestamp_column],
-                                                                    format='%Y-%m-%d %H:%M')
+                                                                    format='%Y-%m-%d %H:%M',errors='coerce')
         already_imported_pms_df.loc[:, self.timestamp_column] = pd.to_datetime(already_imported_pms_df[self.timestamp_column],
                                                                     format='%Y-%m-%d %H:%M')
         registry_df_merged=pd.merge(self.registry_df,already_imported_pms_df,on=['Entity_Type_SQL','Object_Type_SQL','FunctionSubSet_id',self.timestamp_column],how='left')

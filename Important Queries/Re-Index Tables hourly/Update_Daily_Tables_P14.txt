@@ -1,0 +1,6 @@
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@RRC_Status";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Soft_Handover";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Traffic";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Traffic_Volume_and_Data_Rate";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@TX_and_RX_Power";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@UL_Interoperability";

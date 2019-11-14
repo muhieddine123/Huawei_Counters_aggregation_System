@@ -1,0 +1,3 @@
+delete from "Hourly"."BSC6900GSM@TRX@Receive_Quality" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@TRX@Receive_Quality_Distribution" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@TRX@RQI_based_on_TA" WHERE "Result Time"::date <now()::date- 12;

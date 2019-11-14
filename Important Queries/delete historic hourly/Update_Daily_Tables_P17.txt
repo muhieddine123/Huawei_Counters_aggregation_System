@@ -1,0 +1,6 @@
+delete from "Hourly"."BSC6900UMTS@RNC@Multi-RAB_Service" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@RNC@PS_RAB_Modification" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@RNC@PS_RAB_Release" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@RNC@PS_RAB_Setup" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@RNC@RAB_Release" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@Trans_Qual" WHERE "Result Time"::date <now()::date- 12;

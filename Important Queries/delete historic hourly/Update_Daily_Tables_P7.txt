@@ -1,0 +1,4 @@
+delete from "Hourly"."BSC6900GSM@TRX@User_Defined_Table1" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@Site@FlexAbis" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@TRX@Customized_MR" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@TRX@Interference_Band" WHERE "Result Time"::date <now()::date- 12;

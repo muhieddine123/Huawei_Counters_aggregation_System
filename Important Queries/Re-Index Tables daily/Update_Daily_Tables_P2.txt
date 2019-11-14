@@ -1,0 +1,7 @@
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Channel_Status";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@CSFB_Call_for_Cell";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@DL_EGPRS_TBF_Estab_and_Rel";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@DL_GPRS_TBF_Estab_and_Rel";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Downlink_EGPRS_RLC_Data_Transfer";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Downlink_GPRS_RLC_Data_Transfer";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Downlink_LLC_Data_Transfer";

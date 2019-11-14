@@ -1,0 +1,476 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REINDEX TABLE "Hourly"."BSC6900UMTS@IP Path@IPPath";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath IP Layer@IPPath_IP_Layer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath PM@IPPM";
+REINDEX TABLE "Hourly"."BSC6900UMTS@NodeB@Algorithm_per_NodeB";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IP Path@IPPath";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath IP Layer@IPPath_IP_Layer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath PM@IPPM";
+REINDEX TABLE "Hourly"."BSC6900UMTS@NodeB@Algorithm_per_NodeB";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IP Path@IPPath";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath IP Layer@IPPath_IP_Layer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath PM@IPPM";
+REINDEX TABLE "Hourly"."BSC6900UMTS@NodeB@Algorithm_per_NodeB";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IP Path@IPPath";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath IP Layer@IPPath_IP_Layer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath PM@IPPM";
+REINDEX TABLE "Hourly"."BSC6900UMTS@NodeB@Algorithm_per_NodeB";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IP Path@IPPath";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath IP Layer@IPPath_IP_Layer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath PM@IPPM";
+REINDEX TABLE "Hourly"."BSC6900UMTS@NodeB@Algorithm_per_NodeB";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IP Path@IPPath";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath IP Layer@IPPath_IP_Layer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath PM@IPPM";
+REINDEX TABLE "Hourly"."BSC6900UMTS@NodeB@Algorithm_per_NodeB";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IP Path@IPPath";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath IP Layer@IPPath_IP_Layer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath PM@IPPM";
+REINDEX TABLE "Hourly"."BSC6900UMTS@NodeB@Algorithm_per_NodeB";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Setup";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IP Path@IPPath";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath IP Layer@IPPath_IP_Layer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@IPPath PM@IPPM";
+REINDEX TABLE "Hourly"."BSC6900UMTS@NodeB@Algorithm_per_NodeB";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Modification";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Release";
+REINDEX TABLE "Hourly"."BSC6900UMTS@RNC@CS_RAB_Setup";

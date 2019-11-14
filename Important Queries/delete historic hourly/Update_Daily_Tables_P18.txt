@@ -1,0 +1,6 @@
+delete from "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@UMTS DSP@DSP" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6910UMTS@Subsystem@Subsystem" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB" WHERE "Result Time"::date <now()::date- 12;

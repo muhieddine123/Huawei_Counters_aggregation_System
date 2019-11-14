@@ -1,0 +1,7 @@
+delete from "Hourly"."BTS3900@IPPM@IPPM" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Local Cell@Cell_Traffic" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Local Cell@HSDPA" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Local Cell@HSDPA_2" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@NodeB Board@NodeB_Board_Service" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@NodeB@Iub_per_NodeB" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@S1 Link@S1_Link" WHERE "Result Time"::date <now()::date- 12;

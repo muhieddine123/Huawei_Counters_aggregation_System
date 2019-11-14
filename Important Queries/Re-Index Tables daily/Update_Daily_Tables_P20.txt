@@ -1,0 +1,7 @@
+REINDEX TABLE "Daily"."BTS3900@Cell@E-RAB_Modification";
+REINDEX TABLE "Daily"."BTS3900@Cell@E-RAB_Release";
+REINDEX TABLE "Daily"."BTS3900@Cell@E-RAB_Setup";
+REINDEX TABLE "Daily"."BTS3900@Cell@E-RAB_Setup_Failure";
+REINDEX TABLE "Daily"."BTS3900@Cell@Incoming_Inter-RAT_Handover";
+REINDEX TABLE "Daily"."BTS3900@Cell@Incoming_Intra-RAT_Handover";
+REINDEX TABLE "Daily"."BTS3900@Cell@Incoming_Intra-RAT_Handover_over_X2";

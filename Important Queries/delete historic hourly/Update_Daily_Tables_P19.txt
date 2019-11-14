@@ -1,0 +1,7 @@
+delete from "Hourly"."BTS3900@Cell Sector Equipm@SFN_Cell_Sector_Equipment_E-RAB" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Cell_Algorithm" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Cell_Emergency_Call" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Cell_User_Quantity" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Channel_Quality" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@CQI" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@DRB" WHERE "Result Time"::date <now()::date- 12;

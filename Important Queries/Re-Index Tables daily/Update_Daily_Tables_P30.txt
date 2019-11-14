@@ -1,0 +1,3 @@
+REINDEX TABLE "Daily"."BSC6900GSM@TRX@MR_Quantity_based_on_TA";
+REINDEX TABLE "Daily"."BSC6900GSM@TRX@Radio_Link_Failure";
+REINDEX TABLE "Daily"."BSC6900GSM@TRX@Radio_Link_Failure_based_on_TA";

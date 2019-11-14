@@ -1,0 +1,6 @@
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@PDCH_Resource";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Power_Control_Message";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Power_Statistics";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@SDCCH_Call_Drop";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Short_Message";
+VACUUM ANALYZE "Daily"."BSC6900GSM@GSM Cell@Speech_Frame_in_Customized_MR";

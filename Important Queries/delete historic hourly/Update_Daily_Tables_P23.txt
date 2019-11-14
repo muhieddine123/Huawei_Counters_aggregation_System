@@ -1,0 +1,7 @@
+delete from "Hourly"."BTS3900@Cell@PRB" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@RA" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@Resource_Optimization" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@RLC" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@RRC_Reestablishment" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@RRC_Reestablishment_Failure" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BTS3900@Cell@RRC_Setup" WHERE "Result Time"::date <now()::date- 12;

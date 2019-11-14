@@ -1,0 +1,6 @@
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Call_Drop";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Call_Duration";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Cell_Status";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Channel_Assignment_Failure";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Channel_Assignment_Request";
+REINDEX TABLE "Daily"."BSC6900GSM@GSM Cell@Channel_Configuration";

@@ -1,0 +1,3 @@
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Flow_Control";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Immediate_Assignment";
+VACUUM ANALYZE "Hourly"."BSC6900GSM@GSM Cell@Incoming_External_Inter-Cell_Handover";

@@ -1,0 +1,6 @@
+REINDEX TABLE "Hourly"."BSC6900GSM@TRX@Uplink-and-Downlink_Balance";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Algorithm";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Algorithm_2";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@BLER";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@Cell_Update";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Cell@CNOperator";

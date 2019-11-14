@@ -1,0 +1,4 @@
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Uplink_GPRS_RLC_Data_Transfer";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Abis_Interface_Paging";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Abis_Interface_Resource";
+REINDEX TABLE "Hourly"."BSC6900GSM@GSM Cell@Assignment";

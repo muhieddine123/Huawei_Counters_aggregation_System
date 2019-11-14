@@ -1,0 +1,3 @@
+delete from "Hourly"."BSC6900GSM@GSM Cell@Flow_Control" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Immediate_Assignment" WHERE "Result Time"::date <now()::date- 12;
+delete from "Hourly"."BSC6900GSM@GSM Cell@Incoming_External_Inter-Cell_Handover" WHERE "Result Time"::date <now()::date- 12;

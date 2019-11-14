@@ -1,0 +1,6 @@
+REINDEX TABLE "Hourly"."BSC6900UMTS@Transmission Resource Pool Adj Node@UP_Traffic@";
+REINDEX TABLE "Hourly"."BSC6900UMTS@Transmission Resource Pool Local IP Add@IPLayer";
+REINDEX TABLE "Hourly"."BSC6900UMTS@UMTS DSP@DSP";
+REINDEX TABLE "Hourly"."BSC6900UMTS@XPU Subsystem@XPU_Subsystem";
+REINDEX TABLE "Hourly"."BSC6910UMTS@Subsystem@Subsystem";
+REINDEX TABLE "Hourly"."BTS3900@Cell Sector Equip Group@SFN_G_ERAB";
